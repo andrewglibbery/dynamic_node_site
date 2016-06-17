@@ -40,7 +40,7 @@ function user(request, response) {
 					avatarUrl: profileJSON.gravatar_url,
 					username: profileJSON.profile_name,
 					badges: profileJSON.badges.length,
-					javascriptPoints: profileJSON.points.JavaScript
+					javascriptPoints: profileJSON.points.JavaScript,
 				}
 				renderer.view("profile", values, response);
 				renderer.view("footer", {}, response);
